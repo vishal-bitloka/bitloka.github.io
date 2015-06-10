@@ -71,7 +71,7 @@
                 <div class="intro-text">
                     <div class="intro-lead-in">Walk with us!</div>
                     <div class="intro-heading">We'll find a solution together</div>
-                    <a href="#portfolio" class="page-scroll btn btn-xl">Tell Me More</a>
+                    <a href="#portfolio" class="page-scroll btn btn-xl" style="background-color:#A09807">Tell Me More</a>
                 </div>
             </div>
         </header>
@@ -347,8 +347,13 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="col-lg-12 text-center">
-                                    <div id="success"></div>
-                                    <button type="submit" class="btn btn-xl">Send Message</button>
+                                    <div id="successful" style="display:none">
+                                      <div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button><strong id="success_message"> </strong></div>
+                                    </div>
+                                    <div id="error" style="display:none">
+                                      <div class="alert alert-danger"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button><strong>Message not sent, try again. </strong></div>
+                                    </div>
+                                    <button id="contact_submit" type="submit" class="btn btn-xl" style="background-color:#A09807">Send Message</button>
                                 </div>
                             </div>
                         </form>
